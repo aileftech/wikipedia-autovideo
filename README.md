@@ -2,7 +2,8 @@
 
 This Java program automatically creates narrated videos starting from Wikipedia pages,  using images from the page itself and other sources (Pixabay), and doing speech synthesis for the text using Amazon Polly API. If you want to read an in-depth description of how this tool works you can [read more here](https://aileftech.wordpress.com/2020/04/29/turn-any-wikipedia-article-into-a-video-automatically/).
 
-This is an example resulting video for the page Florence: https://www.youtube.com/watch?v=IROxKUeGi0c
+This is an example resulting video for part of the page Florence: https://www.youtube.com/watch?v=IROxKUeGi0c
+On the same channel you can find numerous other examples of such videos.
 
 # How to run
 You need a Java version >= 8 and Maven installed to build the project (you can also building without Maven manually).
