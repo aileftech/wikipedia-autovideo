@@ -1,12 +1,14 @@
 # Wikipedia Autovideo
 
-This Java program automatically creates narrated videos starting from Wikipedia pages,  using images from the page itself and other sources (Pixabay), and doing speech synthesis for the text using Amazon Polly API. If you want to read an in-depth description of how this tool works you can [read more here](https://aileftech.wordpress.com/2020/04/29/turn-any-wikipedia-article-into-a-video-automatically/).
+This Java program automatically creates narrated videos starting from Wikipedia pages, using images from the page itself and other sources
+(Pixabay), and doing speech synthesis for the text using Amazon Polly API. If you want to read an in-depth description of how this tool works 
+you can [read more here](https://aileftech.wordpress.com/2020/04/29/turn-any-wikipedia-article-into-a-video-automatically/).
 
-This is an example resulting video for part of the page Florence: https://www.youtube.com/watch?v=IROxKUeGi0c
+This is an example resulting video, for part of the page of the city of Florence: https://www.youtube.com/watch?v=IROxKUeGi0c
 On the same channel you can find numerous other examples of such videos.
 
 # How to run
-You need a Java version >= 8 and Maven installed to build the project (you can also building without Maven manually).
+You need a Java version >= 8 and Maven installed to build the project (you can also build without Maven manually, but you'll need to take the approriate steps).
 
 1. Run `mvn package` in the root directory of the project. This should build without errors and create a runnable jar file named `autovideo-0.0.1-SNAPSHOT-jar-with-dependencies.jar` in the `target` directory.
 2. Before running, you need to rename the `autovideo.conf.example` file into `autovideo.conf` and fill in your API keys for Pixabay and Amazon Polly.
@@ -14,6 +16,8 @@ You need a Java version >= 8 and Maven installed to build the project (you can a
 ```
 java -jar target/autovideo-0.0.1-SNAPSHOT-jar-with-dependencies.jar New_York neural
 ```
+Note: run the command from the root directory of the project instead of inside the `target` directory. The code relies on relative paths that wouldn't work otherwise.
+
 This will retrieve the New York Wikipedia page and create the video using Amazon neural engine for speech synthesis. 
 This is higher quality but more expensive; the other option is to use `standard` instead of neural, especially for debug, as it is cheaper.
 
