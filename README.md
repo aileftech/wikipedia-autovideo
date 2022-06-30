@@ -16,7 +16,7 @@ You need a Java version >= 8 and Maven installed to build the project (you can a
 ```
 java -jar target/autovideo-0.0.1-SNAPSHOT-jar-with-dependencies.jar New_York neural
 ```
-Note: run the command from the root directory of the project instead of inside the `target` directory. The code relies on relative paths that wouldn't work otherwise.
+Note: run the command from the root directory of the project, as shown, and not form inside the `target` directory. The code relies on relative paths that wouldn't work otherwise.
 
 This will retrieve the New York Wikipedia page and create the video using Amazon neural engine for speech synthesis. 
 This is higher quality but more expensive; the other option is to use `standard` instead of neural, especially for debug, as it is cheaper.
