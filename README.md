@@ -22,7 +22,9 @@ This will retrieve the New York Wikipedia page and create the video using Amazon
 This is higher quality but more expensive; the other option is to use `standard` instead of neural, especially for debug, as it is cheaper.
 
 ## Dependencies
-This tool uses ffmpeg, so you need it installed with a version that's compatible with the ffmpeg filters that we are using. Can't tell an exact number but any version released after 2020 should be ok.
+This tool uses `ffmpeg`, so you need it installed with a version that's compatible with the ffmpeg filters that we are using. Can't tell an exact number but any version released after 2020 should be ok.
+
+Also, to perform image conversions (e.g. SVG to JPG) the tool uses the `convert` command from `imagemagick`.
 
 ## Output
 The program outputs is stored in the `output/final` directory. As the program runs, you will see files like `video.final.0.mp4`, `video.final.1.mp4` in the output directory: 
